@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Mayank Chawdhari">
+    <meta name="keywords" content="NeoPopup, Popup Module, 3D Popup, Web Development, JavaScript Popup, Mayank Chawdhari, Modern Popup, Advanced UI Popup, Popup Framework">
+    <meta name="description" content="NeoPopup by Mayank Chawdhari is a modern, 3D JavaScript popup module designed for developers. Customize and implement with ease. Perfect for interactive, responsive, and professional web designs.">
+    <meta name="robots" content="index, follow">
+    <meta name="og:title" content="NeoPopup | Modern 3D Popup Module by Mayank Chawdhari">
+    <meta name="og:description" content="Explore NeoPopup, the ultimate 3D popup module crafted by Mayank Chawdhari. Built for developers to deliver sleek, interactive, and advanced popups for web projects.">
+    <meta name="og:url" content="https://your-github-pages-link">
+    <meta name="og:type" content="website">
+    <link rel="canonical" href="https://your-github-pages-link">
+    <title>NeoPopup | About</title>
+
+    <script src="underDev.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: url('4060492.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #ffffff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .neo-popup {
+            font-family: 'Poppins', sans-serif;
+
+            background: linear-gradient(145deg, rgba(44, 44, 44, 0.9), rgba(15, 15, 15, 0.9));
+            border-radius: 20px;
+            padding: 40px;
+            width: 90%;
+            max-width: 600px;
+            text-align: center;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+            animation: slideUp 0.8s ease-out;
+        }
+
+        .neo-popup h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            text-shadow: 0 3px 5px rgba(0, 0, 0, 0.4);
+        }
+
+        .neo-popup p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+
+        .neo-popup .buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .neo-popup .buttons a {
+            background: linear-gradient(135deg, #ff7b54, #ff4c4c);
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 1rem;
+            font-weight: 500;
+            padding: 12px 20px;
+            border-radius: 8px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 5px 15px rgba(255, 76, 76, 0.4);
+        }
+
+        .neo-popup .buttons a:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(255, 76, 76, 0.6);
+        }
+
+        @media (max-width: 768px) {
+            .neo-popup {
+                padding: 20px;
+            }
+
+            .neo-popup h1 {
+                font-size: 2rem;
+            }
+
+            .neo-popup p {
+                font-size: 1rem;
+            }
+
+            .neo-popup .buttons a {
+                font-size: 0.9rem;
+                padding: 10px 15px;
+            }
+        }
+
+        @keyframes slideUp {
+            from {
+                transform: translateY(100px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+    </style>
+
+</head>
+<body>
+        <div class="neo-popup">
+            <h1>NeoPopup (Version 1.0)</h1>
+            <p>
+                🚀 NeoPopup is a modern 3D popup module built for developers who demand sleek design, advanced features, 
+                and effortless implementation. Designed with the latest web trends, NeoPopup combines interactivity, 
+                performance, and ease of use to elevate your web projects. Fully customizable, responsive, 
+                and backed by developer-friendly documentation.
+            </p>
+            <div class="buttons">
+                <a href="https://github.com/MayankChawdhari/NeoPopup" target="_blank">Contribute on GitHub</a>
+                <a href="mailto:mayankchawdhari@gmail.com">Contact Developer</a>
+            </div>
+        </div>
+
+    
+    <script>
+        
+        document.addEventListener("DOMContentLoaded", function() {
+            developmentPopup.init({
+                title: "Feature in Development",
+                body: `
+                🚧 <strong>Exciting Things Are Coming!</strong> 🚀<br><br>
+                Our team of passionate developers is burning the midnight oil to bring you an innovative, user-friendly, and groundbreaking experience. This feature or page is currently under development, and we’re putting our hearts and minds into ensuring it exceeds your expectations.<br><br>
+                🌟 <strong>What to Expect:</strong><br>
+                - A sleek, modern design tailored to your needs.<br>
+                - Robust features built with cutting-edge technology.<br>
+                - A seamless and interactive user journey.<br><br>
+                🛠️ <strong>Why the Wait?</strong><br>
+                Quality takes time, and we want to ensure every pixel, every interaction, and every feature is just right. Behind the scenes, we’re testing, tweaking, and perfecting every detail to give you the experience you deserve.<br><br>
+                🔔 <strong>Stay Updated:</strong><br>
+                Make sure to check back soon or click the button below to view the latest updates on what’s in store. Trust us, it’ll be worth the wait!<br><br>
+                P.S. No developers were harmed (or too over-caffeinated) during the creation of this magic! 😉
+            `,
+                buttonText: "Learn More",
+                buttonCallback: () => window.location.href = "/updates",
+                position: "bottom-right",
+                theme: "dark",
+                colors: {
+                    background: "#1f1f1f",
+                    text: "#e0e0e0",
+                    button: "#ff4c4c"
+                },
+                size: {
+                    width: "400px",
+                    height: "auto"
+                },
+                animation: "slide",
+
+                persistent: true
+            });
+        });
+    </script>
+</body>
+</html>
